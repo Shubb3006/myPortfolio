@@ -92,7 +92,7 @@ const Projects = () => {
                 <p className="text-sm text-base-content/70 ">{p.description}</p>
               </div>
               <div className="py-4">
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 px-2 ">
                   {p.skills.map((s, i) => (
                     <span key={i} className="skill-tag">
                       {s}

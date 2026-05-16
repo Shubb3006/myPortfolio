@@ -58,7 +58,7 @@ const Navbar = () => {
               ${
                 activeSection === link.href
                   ? "text-black"
-                  : "text-gray-400 hover:text-white"
+                  :"text-base-content/70 hover:text-orange-400"
               }`}
             >
               {activeSection === link.href && (

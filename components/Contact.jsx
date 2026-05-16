@@ -73,7 +73,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="max-w-xl mx-auto flex flex-col bg-base-100 p-10 rounded-xl items-center text-center justify-center hover:scale-[1.05] duration-300">
-          <button className="px-8 py-3 bg-gray-700 rounded-lg text-gray-400 hover:bg-orange-400/10 hover:text-orange-400 cursor-pointer">
+          <button className="px-8 py-3 bg-base-300 rounded-lg text-base-content/70  hover:bg-orange-400/10 hover:text-orange-400 cursor-pointer transition-all duration-300">
             <Link
               href="https://mail.google.com/mail/?view=cm&fs=1&to=sm325642@gmail.com"
               target="_blank"
@@ -89,7 +89,7 @@ const Contact = () => {
               key={index}
               href={link.href}
               target="_blank"
-              className="w-full sm:w-auto flex justify-center items-center  gap-3 px-6 py-3 rounded-lg border-gray-800 border-1  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
+              className="w-full sm:w-auto flex justify-center items-center  gap-3 px-6 py-3 rounded-lg border-gray-800 border  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
             >
               {link.icon} {link.name}
             </Link>

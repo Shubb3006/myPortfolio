@@ -74,7 +74,7 @@ const Hero = () => {
           </button>
         </Link>
 
-        <button className="px-5 sm:px-10 py-3 border-base-300 bg-gray-700 border rounded-2xl cursor-pointer hover:border-orange-400 hover:text-orange-400 duration-300">
+        <button className="px-5 sm:px-10 py-3 border-base-300 bg-base-200 border rounded-2xl cursor-pointer hover:border-orange-400 hover:text-orange-400 duration-300">
           <Link
             href="/Shubham_Resume.pdf"
             target="_blank"
@@ -91,7 +91,7 @@ const Hero = () => {
             key={index}
             href={link.href}
             target="_blank"
-            className="p-2.5 sm:p-3 rounded-lg bg-gray-700 hover:bg-orange-400 hover:text-black transition-color duration-300"
+            className="p-2.5 sm:p-3 rounded-lg bg-base-200 hover:bg-orange-400 hover:text-black transition-all duration-300"
           >
             {link.icon}
           </Link>
