@@ -1,0 +1,127 @@
+import { Download, Mail, MapPin } from "lucide-react";
+import Link from "next/link";
+import React from "react";
+import { FaWhatsapp } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+
+const Contact = () => {
+  const socialLinks = [
+    {
+      name: "Github",
+      href: "https://github.com/Shubb3006",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-github sm:w-5 sm:h-5"
+        >
+          <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+          <path d="M9 18c-4.51 2-5-2-7-2"></path>
+        </svg>
+      ),
+    },
+
+    {
+      name: "Linkedin",
+      href: "https://www.linkedin.com/in/shubham-bansal-537ab2216/",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="lucide lucide-linkedin sm:w-5 sm:h-5"
+        >
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect width="4" height="12" x="2" y="9"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      ),
+    },
+    {
+      name: "Leetcode",
+      href: "https://leetcode.com/u/sm325642/",
+      icon: <SiLeetcode className="w-5 h-5" />,
+    },
+  ];
+  return (
+    <section
+      id="contact"
+      className="flex justify-center items-center min-h-screen bg-base-300 px-4 py-24"
+    >
+      <div className="max-w-4xl ">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            Get In <span className="text-orange-400">Touch</span>
+          </h2>
+          <p className="text-base-content/50 max-w-2xl mx-auto">
+            I'm always interested in hearing about new opportunities, whether
+            that's a project, a job opportunity, or just a chat about
+            technology. Feel free to reach out!
+          </p>
+        </div>
+        <div className="max-w-xl mx-auto flex flex-col bg-base-100 p-10 rounded-xl items-center text-center justify-center hover:scale-[1.05] duration-300">
+          <button className="px-8 py-3 bg-gray-700 rounded-lg text-gray-400 hover:bg-orange-400/10 hover:text-orange-400 cursor-pointer">
+            <Link
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=sm325642@gmail.com"
+              target="_blank"
+              className="flex items-center justify-center gap-3"
+            >
+              <Mail size={25} /> sm325642@gmail.com
+            </Link>
+          </button>
+        </div>
+        <div className="flex justify-center gap-5 mt-6">
+          {socialLinks.map((link, index) => (
+            <Link
+              key={index}
+              href={link.href}
+              target="_blank"
+              className="flex gap-3 p-2.5 sm:px-6 py-3 rounded-lg border-gray-800 border-1  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
+            >
+              {link.icon} {link.name}
+            </Link>
+          ))}
+        </div>
+
+        <div className="flex justify-center items-center gap-5 mt-6 ">
+          <button className="bg-green-600 px-2 sm:px-5 py-3 rounded-xl transition-all duration-300 hover:scale-[1.05]">
+            <Link
+              href="https://wa.me/917696133321"
+              target="_blank"
+              className="flex gap-1 sm:gap-2 items-center"
+            >
+              <FaWhatsapp size={20} />
+              <p className="text-sm sm:text-md">Chat on Whatsapp</p>
+            </Link>
+          </button>
+
+          <button className="bg-orange-400 px-2 sm:px-5 py-3 rounded-xl text-black transition-all duration-300 hover:scale-[1.05]">
+            <Link
+              href="/Shubham_Resume.pdf"
+              target="_blank"
+              className="flex gap-1 sm:gap-2 items-center "
+            >
+              <Download />
+              <p className="text-sm sm:text-md">Download Resume</p>
+            </Link>
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
