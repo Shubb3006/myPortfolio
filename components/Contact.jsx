@@ -83,21 +83,21 @@ const Contact = () => {
             </Link>
           </button>
         </div>
-        <div className="flex justify-center gap-5 mt-6">
+        <div className="flex sm:flex-row flex-col justify-center text-center items-center gap-5 mt-6">
           {socialLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
               target="_blank"
-              className="flex gap-3 p-2.5 sm:px-6 py-3 rounded-lg border-gray-800 border-1  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
+              className="w-full sm:w-auto flex justify-center gap-3 px-6 py-3 rounded-lg border-gray-800 border-1  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
             >
               {link.icon} {link.name}
             </Link>
           ))}
         </div>
 
-        <div className="flex justify-center items-center gap-5 mt-6 ">
-          <button className="bg-green-600 px-2 sm:px-5 py-3 rounded-xl transition-all duration-300 hover:scale-[1.05]">
+        <div className="flex sm:flex-row flex-col justify-center items-center gap-5 mt-6 ">
+          <button className="bg-green-600 px-5 py-3 rounded-xl transition-all duration-300 hover:scale-[1.05]">
             <Link
               href="https://wa.me/917696133321"
               target="_blank"
@@ -108,7 +108,7 @@ const Contact = () => {
             </Link>
           </button>
 
-          <button className="bg-orange-400 px-2 sm:px-5 py-3 rounded-xl text-black transition-all duration-300 hover:scale-[1.05]">
+          <button className="bg-orange-400 px-5 py-3 rounded-xl text-black transition-all duration-300 hover:scale-[1.05]">
             <Link
               href="/Shubham_Resume.pdf"
               target="_blank"
