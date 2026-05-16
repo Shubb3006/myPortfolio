@@ -89,7 +89,7 @@ const Contact = () => {
               key={index}
               href={link.href}
               target="_blank"
-              className="w-full sm:w-auto flex justify-center gap-3 px-6 py-3 rounded-lg border-gray-800 border-1  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
+              className="w-full sm:w-auto flex justify-center items-center  gap-3 px-6 py-3 rounded-lg border-gray-800 border-1  hover:text-orange-400 hover:border-orange-400 transition-all duration-500"
             >
               {link.icon} {link.name}
             </Link>
