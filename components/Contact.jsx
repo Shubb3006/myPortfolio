@@ -114,7 +114,7 @@ const Contact = () => {
               target="_blank"
               className="flex gap-1 sm:gap-2 items-center "
             >
-              <Download />
+              <Download size={20} />
               <p className="text-sm sm:text-md">Download Resume</p>
             </Link>
           </button>

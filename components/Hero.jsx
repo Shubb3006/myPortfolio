@@ -69,7 +69,7 @@ const Hero = () => {
       </p>
       <div className="mt-10 flex gap-4">
         <Link href="#projects">
-          <button className="px-5 sm:px-10 py-3 bg-orange-400 border-oramge rounded-full text-black cursor-pointer">
+          <button className="px-5 sm:px-10 py-3 bg-orange-400 border-oramge rounded-full text-black cursor-pointer hover:scale-[1.1] transition-all duration-300">
             View My Work
           </button>
         </Link>

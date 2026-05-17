@@ -46,7 +46,9 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-base-300/90 backdrop-blur-md border-b border-base-100">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
         {/* logo */}
-        <h1 className="text-xl sm:text-2xl font-bold">Shubham Bansal</h1>
+        <h1 className="text-xl sm:text-2xl font-semibold text-orange-400">
+          Shubham Bansal
+        </h1>
 
         {/* desktop nav */}
         <div className="hidden md:flex gap-2 border-base-100 rounded-full border p-1 bg-base-200">
@@ -58,7 +60,7 @@ const Navbar = () => {
               ${
                 activeSection === link.href
                   ? "text-black"
-                  :"text-base-content/70 hover:text-orange-400"
+                  : "text-base-content/70 hover:text-orange-400"
               }`}
             >
               {activeSection === link.href && (
