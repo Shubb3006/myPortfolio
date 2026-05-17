@@ -67,14 +67,14 @@ const Hero = () => {
         Full Stack Developer focused on building modern and responsive web
         applications using React.js, Next.js, Tailwind CSS, Node.js, MongoDB.
       </p>
-      <div className="mt-10 flex gap-4">
+      <div className="mt-10 flex sm:flex-row flex-col gap-4">
         <Link href="#projects">
-          <button className="px-5 sm:px-10 py-3 bg-orange-400 border-oramge rounded-full text-black cursor-pointer hover:scale-[1.1] transition-all duration-300">
+          <button className="px-10 py-3 bg-orange-400 border-oramge rounded-full text-black cursor-pointer hover:scale-[1.1] transition-all duration-300">
             View My Work
           </button>
         </Link>
 
-        <button className="px-5 sm:px-10 py-3 border-base-300 bg-base-200 border rounded-2xl cursor-pointer hover:border-orange-400 hover:text-orange-400 duration-300">
+        <button className="px-10 py-3 border-base-300 bg-base-200 border rounded-2xl cursor-pointer hover:border-orange-400 hover:text-orange-400 duration-300">
           <Link
             href="/Shubham_Resume.pdf"
             target="_blank"
