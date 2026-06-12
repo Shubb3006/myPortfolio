@@ -45,7 +45,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-6">
-          {allPRojects.map((p, index) => (
+          {allProjects.map((p, index) => (
             <div
               key={index}
               className="group bg-base-200 rounded-xl shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
