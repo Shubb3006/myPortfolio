@@ -3,31 +3,38 @@ import Link from "next/link";
 import React from "react";
 
 const Projects = () => {
-  const allProjects = [
+  const allPRojects = [
     {
-      name: "TradeWie",
+      name: "TradeWise",
       description:
-        "Built a full-stack stock trading platform where users can buy and sell stocks, track portfolio performance, and view transaction history. Implemented authentication, real-time portfolio updates, and responsive dashboards using Next.js, MongoDB, and Tailwind CSS.",
+        "Full-stack stock trading simulator featuring portfolio management, transaction tracking, authentication, and responsive dashboards. Built with Next.js, MongoDB, and Tailwind CSS, focusing on scalable architecture and modern UI/UX.",
+      githubLink: "https://github.com/Shubb3006/stock-trading",
+      link: "https://stock-trading-ruby.vercel.app/",
+      skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
     },
     {
       name: "E-commerce Platform",
       description:
-        "Developed a full-stack e-commerce application with product browsing, search and filtering, user authentication, shopping cart, and order management. Built responsive UI components and integrated MongoDB for efficient product and user data management.",
+        "Full-stack e-commerce application with product catalog, search, cart management, authentication, and order workflows. Designed responsive interfaces and optimized data fetching for a smooth shopping experience.",
+      githubLink: "https://github.com/Shubb3006/jewellery_store",
+      link: "https://jewellery-store-coral.vercel.app/",
+      skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
     },
     {
       name: "Real Time Chat Application",
       description:
-        "Created a real-time messaging application with instant chat functionality using Socket.IO. Implemented secure authentication, online/offline user status, message persistence, responsive chat interface, and real-time communication between users.",
+        "Real-time chat platform powered by Socket.IO, enabling instant messaging, online presence indicators, and persistent conversations. Implemented secure authentication and responsive UI for seamless communication.",
+      githubLink: "https://github.com/Shubb3006/chat-app-2",
+      link: "https://full-stack-chat-app-f6fa.onrender.com",
+      skills: ["React.js", "Node.js", "Express.js", "Socket.IO", "TailwindCSS"],
     },
     {
       name: "Expense Manager",
       description:
-        "Designed and developed a personal finance management application that allows users to track income, expenses, and spending patterns. Implemented CRUD operations, category-based expense tracking, dashboard analytics, and secure user authentication.",
-    },
-    {
-      name: "Fitness App",
-      description:
-        "Built a fitness tracking application where users can log workouts, monitor progress, and track meal consumption. Developed features for workout management, meal tracking, progress visualization, and user authentication using Next.js and MongoDB.",
+        "Personal finance tracker that helps users monitor income, expenses, and budgets through interactive dashboards and analytics. Built REST APIs, authentication, and data visualization features.",
+      githubLink: "https://github.com/Shubb3006/expense-manager",
+      link: "https://expensemanager-f4ck.onrender.com/",
+      skills: ["React.js", "Node.js", "Express.js", "TailwindCSS", "MongoDB"],
     },
   ];
   return (
@@ -45,7 +52,7 @@ const Projects = () => {
           </p>
         </div>
         <div className="grid sm:grid-cols-2 gap-6">
-          {allProjects.map((p, index) => (
+          {allPRojects.map((p, index) => (
             <div
               key={index}
               className="group bg-base-200 rounded-xl shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300"
