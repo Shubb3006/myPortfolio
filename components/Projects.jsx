@@ -5,6 +5,14 @@ import React from "react";
 const Projects = () => {
   const allPRojects = [
     {
+      name: "TradeWin",
+      description:
+        "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",
+      githubLink: "https://github.com/Shubb3006/stock-trading",
+      link: "https://stock-trading-hfug.vercel.app/",
+      skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
+    },
+    {
       name: "E-commerce Platform",
       description:
         "Built a modern full-stack e-commerce platform with product listings, authentication, cart management, and responsive UI using Next.js, MongoDB, and Tailwind CSS.",
@@ -36,6 +44,7 @@ const Projects = () => {
       link: "https://fitness-app-alpha-flame.vercel.app/",
       skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
     },
+   
   ];
   return (
     <div
