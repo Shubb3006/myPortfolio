@@ -5,7 +5,7 @@ import React from "react";
 const Projects = () => {
   const allProjects = [
     {
-      name: "TradeWise",
+      name: "TradeWie",
       description:
         "Built a full-stack stock trading platform where users can buy and sell stocks, track portfolio performance, and view transaction history. Implemented authentication, real-time portfolio updates, and responsive dashboards using Next.js, MongoDB, and Tailwind CSS.",
     },
