@@ -3,48 +3,32 @@ import Link from "next/link";
 import React from "react";
 
 const Projects = () => {
-  const allPRojects = [
+  const allProjects = [
     {
-      name: "TradeWin",
+      name: "TradeWise",
       description:
-        "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",
-      githubLink: "https://github.com/Shubb3006/stock-trading",
-      link: "https://stock-trading-hfug.vercel.app/",
-      skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
+        "Built a full-stack stock trading platform where users can buy and sell stocks, track portfolio performance, and view transaction history. Implemented authentication, real-time portfolio updates, and responsive dashboards using Next.js, MongoDB, and Tailwind CSS.",
     },
     {
       name: "E-commerce Platform",
       description:
-        "Built a modern full-stack e-commerce platform with product listings, authentication, cart management, and responsive UI using Next.js, MongoDB, and Tailwind CSS.",
-      githubLink: "https://github.com/Shubb3006/jewellery_store",
-      link: "https://jewellery-store-coral.vercel.app/",
-      skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
+        "Developed a full-stack e-commerce application with product browsing, search and filtering, user authentication, shopping cart, and order management. Built responsive UI components and integrated MongoDB for efficient product and user data management.",
     },
     {
       name: "Real Time Chat Application",
       description:
-        "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",
-      githubLink: "https://github.com/Shubb3006/chat-app-2",
-      link: "https://full-stack-chat-app-f6fa.onrender.com",
-      skills: ["React.js", "Node.js", "Express.js", "Socket.IO", "TailwindCSS"],
+        "Created a real-time messaging application with instant chat functionality using Socket.IO. Implemented secure authentication, online/offline user status, message persistence, responsive chat interface, and real-time communication between users.",
     },
     {
       name: "Expense Manager",
       description:
-        "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",
-      githubLink: "https://github.com/Shubb3006/expense-manager",
-      link: "https://expensemanager-f4ck.onrender.com/",
-      skills: ["React.js", "Node.js", "Express.js", "TailwindCSS", "MongoDB"],
+        "Designed and developed a personal finance management application that allows users to track income, expenses, and spending patterns. Implemented CRUD operations, category-based expense tracking, dashboard analytics, and secure user authentication.",
     },
     {
       name: "Fitness App",
       description:
-        "A Modern Full stack WebApp with multiple roles and mutiple users and My role is Senior Frontend Developer.",
-      githubLink: "https://github.com/Shubb3006/fitness-app",
-      link: "https://fitness-app-alpha-flame.vercel.app/",
-      skills: ["Next.js", "Next.js API", "TailwindCSS", "MongoDB"],
+        "Built a fitness tracking application where users can log workouts, monitor progress, and track meal consumption. Developed features for workout management, meal tracking, progress visualization, and user authentication using Next.js and MongoDB.",
     },
-   
   ];
   return (
     <div
